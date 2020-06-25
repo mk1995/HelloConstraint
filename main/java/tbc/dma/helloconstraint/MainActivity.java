@@ -55,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
         btnZero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textView.setText("0");
+                mCount = 0;
+                textView.setText(""+mCount);
                 btnZero.setBackgroundColor(Color.GRAY);
                 btnCount.setTextColor(Color.WHITE);
             }
